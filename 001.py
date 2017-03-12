@@ -1,4 +1,4 @@
-# -*-coding:utf-8*-
+# -*-coding:utf-8 -*-
 
 
 class People(object):
@@ -11,6 +11,7 @@ class People(object):
 
     def setinfo(self, newage):
         self.age = newage
+    
     x = property(getinfo, setinfo)
 
 
@@ -28,6 +29,9 @@ stu1.name = '乔'
 # stu1.score = 100
 # stu1.info()
 # stu1.getinfo()
-print stu1.x
+print stu1.x[0],stu1.x[1].decode('utf-8')
 stu1.x = 18
-print stu1.x
+print stu1.x[0],stu1.x[1].decode('utf-8')
+1111111111111
+
+
