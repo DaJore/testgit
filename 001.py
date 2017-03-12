@@ -7,7 +7,7 @@ class People(object):
         self.age = age
 
     def getinfo(self):
-        return self.age
+        return self.age,self.name
 
     def setinfo(self, newage):
         self.age = newage
@@ -24,7 +24,7 @@ class Student(People):
 
 
 stu1 = Student(22)
-# stu1.name = '乔'
+stu1.name = '乔'
 # stu1.score = 100
 # stu1.info()
 # stu1.getinfo()
